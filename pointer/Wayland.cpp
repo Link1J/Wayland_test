@@ -498,14 +498,14 @@ namespace Wayland
 
 			toplevel = xdg_surface_get_toplevel(surface_xdg);
 			xdg_toplevel_add_listener(toplevel, &Listeners::xdg_toplevel, this);
-			xdg_toplevel_set_title(toplevel, "SHM-Test");
+			xdg_toplevel_set_title(toplevel, "Pointer-Test");
 			xdg_toplevel_set_app_id(toplevel, "Test App");
 		}
 		else if (shell)
 		{
 			shell_surface = wl_shell_get_shell_surface(shell, surface_wl);
 			wl_shell_surface_add_listener(shell_surface, &Listeners::wl_shell_surface, this);
-			wl_shell_surface_set_title(shell_surface, "SHM-Test");
+			wl_shell_surface_set_title(shell_surface, "Pointer-Test");
 			wl_shell_surface_set_class(shell_surface, "Test App");
 			wl_shell_surface_set_toplevel(shell_surface);
 		}
