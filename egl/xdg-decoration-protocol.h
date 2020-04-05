@@ -47,7 +47,7 @@ struct zxdg_toplevel_decoration_v1;
 
 /**
  * @page page_iface_zxdg_decoration_manager_v1 zxdg_decoration_manager_v1
- * @section page_iface_z_interfacexdg_decoration_manager_v1_desc Description
+ * @section page_iface_zxdg_decoration_manager_v1_desc Description
  *
  * This interface allows a compositor to announce support for server-side
  * decorations.

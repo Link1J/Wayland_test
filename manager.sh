@@ -84,7 +84,7 @@ elif [ "$1" == "EGL" ]; then
 				gcc -Wall -g -I ./egl -c -o build/egl/xdg-decoration-protocol.c.obj egl/xdg-decoration-protocol.c
 
 				echo Linking exe
-				g++ -std=c++2a -Wall -lwayland-client -lEGL -lwayland-egl -lGLESv2 -g -I ./ -o build/egl-test build/egl/*
+				g++ -std=c++2a -Wall -g -I ./ -o build/egl-test build/egl/* -lwayland-client -lEGL -lwayland-egl -lGLESv2
 			;;
 			"run")
 				echo Running
